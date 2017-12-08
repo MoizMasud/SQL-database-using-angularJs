@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xfit Sign Up</title>
+  <!-- Stylesheets -->
+  <link href="lib/semantic/semantic.css" rel="stylesheet" type="text/css">
+  <link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper" class="ui middle aligned center aligned grid">
+  <div class="column" style="max-width: 500px;">
+    <h1 class="ui green header">Xfit Sign Up</h1>
+
+    <form class="ui large form" action="/signup" method="post">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="fname" placeholder="First Name">
+            </div>
+            <div class="field">
+              <input type="text" name="lname" placeholder="Last Name">
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <input type="text" name="username" placeholder="Username">
+        </div>
+        <div class="field">
+          <input type="text" name="dOfBirth" placeholder="YYYY/MM/DD">
+        </div>
+        <div class="field">
+          <input type="number" name="membershipNo" placeholder="Membership No">
+        </div>
+        <div class="field">
+          <input type="text" name="address" placeholder="address">
+        </div>
+        <div class="field">
+          <input type="number" name="phoneNo" placeholder="phoneNo">
+        </div>
+        <button class="ui fluid large green submit button">Sign Up</button>
+      </div>
+    </form>
+
+    <div class="ui message">
+      Have an account?&nbsp;&nbsp;
+      <a href="/login">Login</a>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="lib/jquery/jquery.js" type="text/javascript"></script>
+<script src="lib/semantic/semantic.js" type="text/javascript"></script>
+</body>
+</html>

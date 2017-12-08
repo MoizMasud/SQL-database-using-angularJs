@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xfit Workout</title>
+  <!-- Stylesheets -->
+  <link href="lib/semantic/semantic.css" rel="stylesheet" type="text/css">
+  <link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper" class="ui middle aligned center aligned grid">
+  <div class="column" style="max-width: 450px;">
+    <h1 class="ui green header">Workouts</h1>
+
+    <div class="ui message">
+      <p>Click each routine to add exercises</p>
+      <div>
+        <form class="ui large form" action="/workout" method="post">
+          <select name="cars">
+            <% for (var i = 0; i < mes.length; i++) { %>
+              <option value=<%= mes[i].routineId %> > <%= mes[i].routineName %></option>
+            <% } %>
+          </select>
+
+          <select name="cars2">
+            <% for (var i = 0; i < ex.length; i++) { %>
+              <option value=<%= ex[i].exerciseId %> > <%= ex[i].exerciseName %></option>
+            <% } %>
+          </select>
+
+          <button class="ui fluid large green submit button">Add exercise</button>
+        </form>
+        <form>
+
+
+          <div class="ui message">
+            &nbsp;&nbsp;
+            <a href="/dashboard">Done</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="lib/jquery/jquery.js" type="text/javascript"></script>
+  <script src="lib/semantic/semantic.js" type="text/javascript"></script>
+</body>
+</html>

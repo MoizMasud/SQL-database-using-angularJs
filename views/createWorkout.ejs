@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xfit</title>
+  <!-- Stylesheets -->
+  <link href="lib/semantic/semantic.css" rel="stylesheet" type="text/css">
+  <link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper" class="ui middle aligned center aligned grid">
+  <div class="column" style="max-width: 500px;">
+    <h1 class="ui green header">Xfit Create Routine</h1>
+
+    <form class="ui large form" action="/createWorkout" method="post">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="routineName" placeholder="Routine Name">
+            </div>
+            <div class="field">
+              <input type="text" name="description" placeholder="Description">
+            </div>
+            <div class="field">
+              <input type="text" name="id" placeholder="Routine String Id">
+            </div>
+            <div class="field">
+              <input type="text" name="time" placeholder="Duration of Routine">
+            </div>
+
+          </div>
+        </div>
+
+        <button class="ui fluid large green submit button">Create Workout</button>
+      </div>
+    </form>
+
+    <div class="ui message">
+
+      <a href="/workout">Done</a>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="lib/jquery/jquery.js" type="text/javascript"></script>
+<script src="lib/semantic/semantic.js" type="text/javascript"></script>
+</body>
+</html>
